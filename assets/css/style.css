@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(69deg, rgb(179, 179, 179) 0 30%, rgb(80, 80, 80) 50% 100%);
+}
+
+header {
+    background-color: rgb(141, 154, 142);
+    opacity: .8;
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: block;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+}
+.title {
+    display: inline;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 12px;
+    
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border: 1px solid grey;
+    margin-right: 1.8em;
+
+} 
+
+section {
+    margin-top: 50px;
+    width: 40%;
+}
+
+.bio-image {
+    width: 300px;
+    height: 300px;
+}
