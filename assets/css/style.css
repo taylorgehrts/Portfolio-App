@@ -14,40 +14,68 @@ header {
 }
 
 nav {
-    display: block;
-    align-items: center;
-    position: relative;
-    margin-left: auto;
-}
-.title {
-    display: inline;
+    width: 100%;
 }
 
-ul {
+.nav-list {
+    height: 60px;
+    padding: 1rem 0;
+    display: flex;
     list-style: none;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-end;
-    padding-bottom: 12px;
+    align-items: center;
+    width: 100%;
     
 }
 
-li {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    border: 1px solid grey;
-    margin-right: 1.8em;
+.nav-item {
+    margin-right: 2rem; 
 
 } 
 
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 1rem;
+    font-weight: bolder;
+
+}
+
 section {
     margin-top: 50px;
-    width: 40%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(235, 232, 232, 0.678);
 }
 
 .bio-image {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: 25%;
+}
+
+section h2 {
+    position:  relative;
+    top: 10%;
+    left: -25%;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 25%;
+
+   
+}
+
+section p {
+    width: 600px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -25%;
+    
+    
+    
 }
