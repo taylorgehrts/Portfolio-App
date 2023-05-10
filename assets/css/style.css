@@ -1,26 +1,27 @@
+/* defaults*/
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/*background color*/
 body {
-    background-color: darkgrey;
+    background-color: rgb(51, 51, 51);
 }
-
+/*Header color and size*/
 header {
-    background-color: rgb(141, 154, 142);
-    opacity: .8;
+    background-color: rgb(141, 146, 154);
     height: auto;
     width: 100%;
-    
-}
 
+
+}
+/*Nav Width*/
 nav {
     width: 100%;
 }
-
+/*Nav list placement*/
 .nav-list {
     height: 60px;
     padding: 1rem 0;
@@ -29,33 +30,28 @@ nav {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    
-
 }
-
+/*Spacing for nav items*/
 .nav-item {
     margin-right: 2rem;
 
 }
-
+/*Hover effect for menu items*/
 .nav-item:hover {
     background-color: lightgray;
-    
-
 }
-
+/*styling for menu links*/
 .nav-item a {
     text-decoration: none;
     color: black;
 }
-
+/*Position for website logo*/
 .nav-item:first-child {
     margin-right: auto;
     margin-left: 1rem;
     font-weight: bolder;
-
 }
-
+/*Basic display settings for about section*/
 section {
     margin-top: 15px;
     width: 100%;
@@ -63,12 +59,12 @@ section {
     position: relative;
     background-color: rgba(235, 232, 232, 0.678);
 }
-
+/*about image size*/
 .bio-image {
     width: 25%;
     height: 25%;
 }
-
+/*About section sub header*/
 section h2 {
     background-color: black;
     color: white;
@@ -76,9 +72,8 @@ section h2 {
     top: -1lh;
     width: 100%;
     padding-left: 1vw;
-
 }
-
+/*About section text postion and margins*/
 section p {
     width: 100%;
     flex-wrap: wrap;
@@ -87,102 +82,92 @@ section p {
     margin-top: 2vw;
     margin-bottom: 5vh;
 }
+/*About section link color*/
+section a {
+    color: rgb(63, 63, 63);
+}
 
-
-.workhead  {
+/*Sub header for work and contact section*/
+.workhead {
     width: 100%;
     height: auto;
     background-color: black;
     color: white;
     padding-left: 1vw;
-    
 }
+/*Flex container for first project*/
 .container1 {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     height: 300px;
     width: 100vw;
-    border: solid black 5px;
+    border: solid black 1px;
     background-color: #2a607c;
-    justify-content: space-between;
-    
 }
 
-
+/*Flex container for remaining work*/
 .container {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     width: 100vw;
-    border: solid black 5px;
+    border: solid black 1px;
     justify-content: space-between;
-    
 }
 
-
-
-
+/*Card sizing and border for first project*/
 .cardnew {
     flex: 0 0 100%;
     height: 300px;
     width: 33vw;
-    border: solid black 2px;
-    
+    border: solid black 1px;
 }
-
+/*Hover effect for first project*/
 .cardnew:hover {
     filter: brightness(110%);
 }
-
+/*Flex and size for for first project image*/
 .workimage1 {
     flex: 0 0 100%;
     width: 100%;
-    
-    
 }
-
+/*Flex and size for for remaining project images*/
 .workimageall {
     flex: 0 0 100%;
     width: 100%;
     height: 20vh;
-    object-fit: cover;
     position: relative;
-    
-    
 }
-
+/*Card sizing and border for remaining projects*/
 .card {
     flex: 0 0 100%;
     width: 33vw;
-    border: solid black 2px;
-    
+    border: solid black 1px;
 }
-
+/*Hover effects for remaining cards*/
 .card:hover {
     filter: brightness(110%);
 }
-
+/*Titles for cards*/
 .cap {
-    background-color: rgb(57, 57, 57);
+    background-color: rgb(93, 123, 156);
     color: white;
     line-height: 1.75lh;
-    
+    padding-left: 1vw;
 }
 
-
-
+/*Size of remaining card images*/
 .cardimg {
     width: auto
 }
-
+/*Contact section sizing and display mode*/
 .contact {
     height: 10vh;
     display: flex;
     color: black;
-
 }
-
+/*Style and position of contact info*/
 .contactlist {
     height: 60px;
     padding: 1rem 0;
@@ -195,22 +180,33 @@ section p {
     font-weight: bold;
     color: black;
 }
-
+/*Text color for contact section*/
 .contactli {
-    color: black;
+    color: white;
 }
-
+/*Hover effect for contact list items*/
 .contactli:hover {
     color: rgb(88, 88, 88);
 }
-
-@media screen and (min-width: 768px) {
-    .card {
-         flex: 0 0 50%;
-    }
+/*Footer settings*/
+footer {
+    display: flex;
+    padding: 1vh;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 120%;
+    background-color: rgb(141, 146, 154);
 }
 
+/*size adjustments for cards when screen size is above 768px*/
+@media screen and (min-width: 768px) {
+    .card {
+        flex: 0 0 50%;
+    }
+}
+/*size adjustments for cards when screen size is above 996px*/
 @media screen and (min-width: 996px) {
     .card {
         flex: 0 0 33%;
     }
+}
