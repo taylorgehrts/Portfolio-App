@@ -38,6 +38,12 @@ nav {
 
 }
 
+.nav-item:hover {
+    background-color: lightgray;
+    
+
+}
+
 .nav-item a {
     text-decoration: none;
     color: black;
@@ -82,16 +88,6 @@ section p {
     margin-bottom: 5vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: wrap;
-    width: 100%;
-    border: solid black 5px;
-    justify-content: space-between;
-    
-}
 
 .workhead  {
     width: 100%;
@@ -101,20 +97,120 @@ section p {
     padding-left: 1vw;
     
 }
-
-.card {
+.container1 {
     display: flex;
-    flex: 0 0 33%;
+    position: relative;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100vw;
+    border: solid black 5px;
+    background-color: #2a607c;
+    justify-content: space-between;
+    
+}
+
+
+.container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100vw;
+    border: solid black 5px;
+    justify-content: space-between;
+    
+}
+
+
+
+
+.cardnew {
+    flex: 0 0 100%;
+    height: 300px;
     width: 33vw;
     border: solid black 2px;
     
 }
 
-.card img {
+.cardnew:hover {
+    filter: brightness(110%);
+}
+
+.workimage1 {
+    flex: 0 0 100%;
     width: 100%;
     
+    
 }
+
+.workimageall {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    position: relative;
+    
+    
+}
+
+.card {
+    flex: 0 0 100%;
+    width: 33vw;
+    border: solid black 2px;
+    
+}
+
+.card:hover {
+    filter: brightness(110%);
+}
+
+.cap {
+    background-color: rgb(57, 57, 57);
+    color: white;
+    line-height: 1.75lh;
+    
+}
+
+
 
 .cardimg {
     width: auto
 }
+
+.contact {
+    height: 10vh;
+    display: flex;
+    color: black;
+
+}
+
+.contactlist {
+    height: 60px;
+    padding: 1rem 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.contactli {
+    color: black;
+}
+
+.contactli:hover {
+    color: rgb(88, 88, 88);
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+         flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .card {
+        flex: 0 0 33%;
+    }
