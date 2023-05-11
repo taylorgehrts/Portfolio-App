@@ -46,7 +46,7 @@ THEN I am presented with a responsive layout that adapts to my viewport ✅
 
 ## Installation
 follow this link to checkout the finished page
-[https://taylorgehrts.github.io/challenge_1/](https://taylorgehrts.github.io/challenge_1/)
+[https://taylorgehrts.github.io/Taylors-Portfolio-App/](https://taylorgehrts.github.io/Taylors-Portfolio-App/)
 
 ## Usage
 
