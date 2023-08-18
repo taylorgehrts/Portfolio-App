@@ -118,6 +118,8 @@ section a {
 .container1 {
     display: flex;
     position: relative;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     height: 300px;
     width: 100vw;
@@ -152,7 +154,8 @@ section a {
 /*Flex and size for for first project image*/
 .workimage1 {
     flex: 0 0 100%;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Flex and size for for remaining project images*/
